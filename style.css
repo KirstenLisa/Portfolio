@@ -137,8 +137,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-right: 5px;
+    margin-left: 10px;
   }
 
   .project {
@@ -159,6 +160,11 @@ footer {
 }
 
 @media screen and (min-width: 980px) /* Desktop */ {
+  
+  #projectDiv {
+    margin-left: 15px;
+  }
+
   .project {
     width: 23%;
   }
