@@ -1,57 +1,166 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+nav,
+footer {
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  display: block;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navBarBrand {
+  margin-top: 10px;
+  font-weight: bold; 
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  padding: 0px;
+}
+
+.links li {
+  margin: 0px 10px 0px 10px;
+}
+
+
+header {
+  margin-top: 90px;
+  background-color: #ddd;
+}
+
+h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 15px;
+}
+
+.aboutMe {
+  min-height: 200px;
+  padding: 15px;
+  background-color: #bbb;
   
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
+}
+
+#aboutText {
+  margin-left: 30px;
+}
+
+#portfolio {
+  padding-left: 15px;
+
+}
+
+#projectDiv {
+  margin-left: 30px;
+  margin-right: 45px;
+}
+
+.project {
+  text-align: left;
+}
+
+#project1 {
+  background-color: #bbb;
+}
+
+#project2 {
+  background-color: #ddd;
+}
+
+#project3 {
+  background-color: #bbb;
+}
+
+#project4 {
+  background-color: #ddd;
+}
+
+.techList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 0px;
+}
+
+.techList li {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+
+@media screen  and (min-width: 760px) /* Tablet */ {
+
   nav {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  
-  header {
-    margin-top: 100px;
-    padding: 12% 0;
-  }
-  
-  ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-  }
-  
-  li {
-    margin-right: 10px;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .projectImage {
-    width: 80%;
+  .navBarBrand {
+    margin-top: 0px;
+    padding-left: 15px; 
   }
-  
+
+  #portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #projectDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 5px;
+  }
+
+  .project {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 45%;
+  }
+
+  .techList {
+    justify-content: flex-start;
+  }
+
+  footer {
+    text-align: left;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  .project {
+    width: 23%;
+  }
+
+}
