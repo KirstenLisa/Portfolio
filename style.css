@@ -3,17 +3,18 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
-  font-size: 20px;
-  color: #444;
-  line-height: 1.5;
+  color:#404040;
   margin: 0px;
+}
+
+a {
+text-decoration: none;
 }
 
 nav,
 footer {
-  background-color: #aaa;
+  font-family: Karla,sans-serif; 
+  background-color: #404040;
 }
 
 nav {
@@ -28,11 +29,16 @@ nav {
 
 .navBarBrand {
   margin-top: 10px;
-  font-weight: bold; 
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: white; 
+  
 }
 
 .links {
   list-style: none;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,36 +46,84 @@ nav {
   padding: 0px;
 }
 
-.links li {
-  margin: 0px 10px 0px 10px;
+
+a:-webkit-any-link {
+color: white;
 }
 
+a:hover {  
+  color: #FF0084;
+  font-size: 20px;
+}
 
+.links li {
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+}
+
+.contact {
+background-color:#FF0084;
+text-decoration: none;
+padding: 5px;
+}
+
+.contact a:hover {
+color: black;
+
+}
+ 
 header {
   margin-top: 90px;
-  background-color: #ddd;
+  background-color: white;
 }
 
 h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 15px;
+  padding: 40px 15px 40px 15px;
+  position: relative;
+}
+
+span {
+  color: #FF0084;
+}
+
+.name {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 210px;
 }
 
 .aboutMe {
   min-height: 200px;
   padding: 15px;
-  background-color: #bbb;
-  
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px; 
+  line-height: 48px;
 }
 
 #aboutText {
   margin-left: 30px;
+  font-family: 'Quattrocento', serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 30px;
+}
+
+.aboutMe span {
+  font-weight: bold;
 }
 
 #portfolio {
   padding-left: 15px;
-
+  margin-bottom: 20px;
 }
 
 #projectDiv {
@@ -79,29 +133,58 @@ h1 {
 
 .project {
   text-align: left;
+  margin-bottom: 40px;
 }
 
-#project1 {
-  background-color: #bbb;
+.projectImage {
+  border: 1px solid #bfbfbf;
+  width: 80%;
 }
 
-#project2 {
-  background-color: #ddd;
+.projectTitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+  left: -30px;
 }
 
-#project3 {
-  background-color: #bbb;
+.logo {
+  width: 25px;
 }
 
-#project4 {
-  background-color: #ddd;
+.projectDes {
+  font-family: 'Quattrocento', serif; 
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+#repoLink, #pageLink {
+  font-family: Karla,sans-serif; 
+  font-size: 20px;
+  color: #FF0084
+}
+
+.project a:hover {
+  color:#404040;
+  font-size: 20px;
+}
+
+#pageLink a:hover {
+  color:#404040;
+  font-size: 20px;
+}
+
+#pageLink:before {
+  content: "| ";
 }
 
 .techList {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding-left: 0px;
+  padding-left: 0px; 
 }
 
 .techList li {
@@ -109,9 +192,24 @@ h1 {
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  padding-left: 15px;
+  align-items: center;
+  font-size: 18px;
 }
 
+footer a {
+  background-color:#FF0084;
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer a:hover {
+  color: black;
+}
 
 @media screen  and (min-width: 760px) /* Tablet */ {
 
@@ -126,6 +224,36 @@ footer {
   .navBarBrand {
     margin-top: 0px;
     padding-left: 15px; 
+    font-size: 28px;
+  }
+
+  .links {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  header, main {
+    margin-left: 40px;
+    margin-right: 30px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .name {
+    top: 82px;
+    left: 220px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #aboutText {
+    font-size: 20px;
+    line-height: 40px;
   }
 
   #portfolio {
@@ -137,36 +265,98 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-right: 5px;
-    margin-left: 10px;
   }
 
   .project {
-    margin-right: 10px;
+    margin-right: 38px;
     margin-bottom: 15px;
     text-align: left;
-    width: 45%;
+    width: 43%;
   }
 
   .techList {
     justify-content: flex-start;
   }
 
+  .projectImage {
+    width: 98%;
+  }
+
+  #project2 .projectImage {
+    margin-bottom: 54px;
+  }
+
+  .projectTitle {
+    font-size: 22px;
+    left: -37px;
+  }
+
+  .projectDes {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .logo {
+    width: 38px;
+}
+
+  #repoLink, #pageLink {
+    font-size: 22px;
+  }
+
+  .project a:hover {
+    font-size: 26px;
+  }
+
   footer {
     text-align: left;
     padding: 15px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  #footerLink {
+    padding: 5px 10px 5px 10px;
   }
 }
 
 @media screen and (min-width: 980px) /* Desktop */ {
+  /* adjust when more projects */
   
-  #projectDiv {
-    margin-left: 15px;
+  header, main {
+    margin-left: 40px;
+    margin-right: 30px;
   }
 
-  .project {
-    width: 23%;
+  .navBarBrand {
+    font-size: 30px;
   }
+  
+  .aboutMe {
+    margin-bottom: 90px;
+  }
+  
+  #project2 .projectImage {
+    margin-bottom: 87px;
+  }
+
+  footer {
+    text-align: left;
+    padding: 15px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  #footerLink {
+    padding: 5px 15px 5px 15px;
+  }
+}
 
 }
+
+/* pink: #FF0084
+darkgray:#404040 
+other darkgray:  #444 */
+

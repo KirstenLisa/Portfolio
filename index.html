@@ -4,83 +4,65 @@
     <title>Kirsten Portfolio Wireframe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kirsten Yadin's portfolio site">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <meta name="description" content="Kirsten Kustusch's portfolio site">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:300,400,500,600,700" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
 </head>
 <body>
   
     <nav role="navigation">
-      <div class="navBarBrand">Name</div>
+      <div class="navBarBrand">Kirsten Kustusch</div>
       <ul class="links">
-        <li class="about">Link 1</li>
-        <li class="portfolio"> Link 2</li>
-        <li class="github">Link 3</li>
-        <li class="contact">Link 4</li>
+        <li class="about"><a href="#aboutMe">About</a></li>
+        <li class="portfolio"><a href="#portfolio"> Portfolio</a></li>
+        <li class="github"><a target="_blank" href="https://github.com/KirstenLisa/" >Github</a></li>
+        <li class="contact"><a href="mailto:kirsten.kustusch@gmail.com">Contact</a></li>
       </ul>
     </nav>
     <header role="banner" class="header">
-      <h1>Hero</h1>
+      <h1>Hi, my name is <span class="name">Kirsten</span></h1>
     </header>
     <main role="main">
 
       <section class="aboutMe" id="aboutMe">
-        <h2 id="aboutHeadline">About Me Headline</h2>
-        <div id="aboutText">About Me Text</div>
+        <h2 id="aboutHeadline">About Me</h2>
+        <div id="aboutText">I am on my way to become a <span>Web Developer</span>. For the first ten years of my professional life I worked as a TV-journalist and video editor. What I love about coding ist the same that I love about TV-journalism: communicating with peope by visualizing ideas and stories. I want to know how things work, their background story and love to learn about new technologies, different perspectives, other solutions.</div>
       </section>
 
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div id="projectDiv">
           <div class="project" id="project1">
-            <h3 class="projectTitle">Project 1 Title</h3>
-            <p class="projectDes">Project Description</p>
-            <a class="repoLink">Repo</a>
-            <a class="pageLink">Live</a>
-            <ul class="techList" style="list-style: none;">
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-              <li>Tech 4</li>
+            <img class="projectImage" src="Images/DieHard.png" alt="Die Hard Quiz">
+            <h3 class="projectTitle">Die Hard Quiz</h3>
+             <ul class="techList" style="list-style: none;">
+              <li id="HTML5"><img class="logo" src="Images/HTML5_Logo.png" alt="HTML5 Logo"></li>
+              <li id="CSS"><img class="logo" src="Images/cssLogo.png" alt="CSS logo"</li>
+              <li id="jQuery"><img class="logo" src="Images/JQueryLogo.jpg"</li>
             </ul>
+            <p class="projectDes">Find out how hard you really are and how many facts you know about the Die Hard movies. 
+            Have you been brave enough to watch all five?</p>
+            <a class="projectLink" id="repoLink" href="https://github.com/KirstenLisa/Die-Hard-Quiz" target="_blank">Repo</a>
+            <a class="projectLink" id="pageLink" href="https://kirstenlisa.github.io/Die-Hard-Quiz/" target="_blank">Live</a>
           </div>
           <div class="project" id="project2">
-            <h3 class="projectTitle">Project 2 Title</h3>
-            <p class="projectDes">Project Description</p>
-            <a class="repoLink">Repo</a>
-            <ul class="techList" style="list-style: none;">
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-              <li>Tech 4</li>
+            <img class="projectImage" src="Images/WhoSuicide.png" alt="WHO Suicide Graph">
+            <h3 class="projectTitle">WHO Suicide Analysis</h3>
+                 <ul class="techList" style="list-style: none;">
+              <li id="NumPy"><img class="logo" src="Images/NumPyLogo.png" alt="NumPy Logo"></li>
+              <li id="Python"><img class="logo" src="Images/pythonLogo.png" alt="Python Logo"></li>
+              <li id="Matplotlib"><img class="logo" src="Images/matplotlibLogo.png" alt="Matplotlib Logo"></li>
             </ul>
-          </div>
-          <div class="project" id="project3">
-            <h3 class="projectTitle">Project 3 Title</h3>
-            <p class="projectDes">Project Description</p>
-            <a class="repoLink">Repo</a>
-            <ul class="techList" style="list-style: none;">
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-              <li>Tech 4</li>
-            </ul>
-          </div>
-          <div class="project" id="project4">
-            <h3 class="projectTitle">Project 4 Title</h3>
-            <p class="projectDes">Project Description</p>
-            <a class="repoLink">Repo</a>
-            <ul class="techList" style="list-style: none;">
-              <li>Tech 1</li>
-              <li>Tech 2</li>
-              <li>Tech 3</li>
-              <li>Tech 4</li>
-            </ul>
+            <p class="projectDes">Analysis of suicide numbers covering 1985-2016, by country, year, age groups and sex, exploring long-time trends and differences between countries.
+            </p>
+            <a class="codeLink" id="repoLink" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis" target="_blank">Repo</a>
           </div>
         </div>
       </section>
        
     </main>
-    <footer role="content-info"><p>Footer</p></footer>
+    <footer role="content-info"><a id="footerLink" href="mailto:kirsten.kustusch@gmail.com">Email Me</a></p></footer>
 </body>
 </html>
