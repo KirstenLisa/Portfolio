@@ -217,12 +217,18 @@ h2 {
   font-size: 20px;
 }
 
+
 .codeLink a:visited {
-  color: #FF0084; 
+  color: #FF0084 !important; 
 }
 
-.codeLink a:hover {
-  color:#404040;
+.codeLink:hover {
+  color:#404040 !important;
+  font-size: 20px;
+}
+
+.pageLink:hover {
+  color:#404040 !important;
   font-size: 20px;
 }
 
