@@ -31,9 +31,22 @@ function showPortfolio() {
 function showAbout() {
   $('#aboutText2').fadeIn();
   $('#aboutHeadline').fadeIn();
-  $('html, body').animate({ scrollTop: $("#aboutMe").offset().top - (70)  }, 500);
+  $('html, body').animate({ scrollTop: $("#aboutMe").offset().top - (80)  }, 500);
   $('.aboutLink').addClass('navLinkOpen');
   $('.portfolioLink').removeClass('navLinkOpen');
+}
+
+function toggleMenu() {
+  let menu = document.getElementById("navLinks");
+  let brand = document.getElementById("navBarBrand");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+    brand.style.display= "flex";
+
+  } else {
+    menu.style.display = "flex";
+    brand.style.display= "none";
+  }
 }
 
 

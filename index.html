@@ -5,21 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Kirsten Kustusch's portfolio site">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:300,400,500,600,700" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   
-    <nav role="navigation">
-      <div class="navBarBrand">Kirsten Kustusch</div>
-      <ul class="links">
+    <nav role="navigation" id="main-menu" class="main-menu">
+      <div class="navBarBrand" id="navBarBrand" class="active">Kirsten Kustusch</div>
+      <ul id="navLinks" class="links">
         <li class="aboutLink"><a href="#aboutMe">About</a></li>
         <li class="portfolioLink"><a href="#portfolio"> Portfolio</a></li>
         <li class="github"><a target="_blank" href="https://github.com/KirstenLisa/" >Github</a></li>
         <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/kirstenkustusch/">LinkedIn</a></li>
       </ul>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a> 
     </nav>
     <header role="banner" class="header">
       <h1>Hi, my name is <span class="name">Kirsten</span></h1>
@@ -60,6 +64,7 @@
             <p class="projectDes">Analysis of suicide numbers covering 1985-2016, by country, year, age groups and sex, exploring long-time trends and differences between countries.
             </p>
             <a class="codeLink" id="repoSuicide" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis" target="_blank">Repo</a>
+            <a class="pageLink" id="pageSuicide" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis/blob/master/Suicide%20Project.ipynb" target="_blank">Live</a>
           </div>
         </div>
       </section>
