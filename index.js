@@ -22,7 +22,7 @@ startPage();
 
 function showPortfolio() {
   $('#portfolio').fadeIn();
-  $('html, body').animate({ scrollTop: $("#portfolio").offset().top - (150)}, 1000);
+  $('html, body').animate({ scrollTop: $("#portfolio").offset().top - (90)}, 1000);
   $('.portfolioLink').addClass('navLinkOpen');
   $('.aboutLink').removeClass('navLinkOpen');
   $('#portfolioButton').hide();
