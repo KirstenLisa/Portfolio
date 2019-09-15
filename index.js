@@ -26,10 +26,12 @@ function startPage() {
 
 $(function () {
   $(window).on("resize", function () {
-      if ($(window).width() < 759) {
+      if ($(window).width() < 760) {
           $('#navLinks').hide();
+          $('#navBarBrand').show();
       } else {
           $('#navLinks').show();
+          $('#navBarBrand').show();
       }
   });
 })
