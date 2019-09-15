@@ -60,13 +60,6 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* list-style: none;
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 10px;
-  padding: 0px; */
 }
 
 .aboutLink, .portfolioLink, .github{
@@ -272,6 +265,9 @@ h2 {
 
 footer {
   display: flex;
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 50px;
   text-align: left;

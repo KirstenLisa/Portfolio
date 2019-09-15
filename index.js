@@ -8,15 +8,32 @@ function startPage() {
   $('#portfolioButton').click(function() {
       showPortfolio();
     })
+
   $('.portfolioLink').on('click', function() {
     console.log("portfolio nav")
     showPortfolio();
   })
+
   $('.aboutLink').on('click', function() {
     console.log("about nav");
     showAbout();
   })
+
+  $('.icon').on('click', function() {
+    toggleMenu();
+  })
 }
+
+$(function () {
+  $(window).on("resize", function () {
+      if ($(window).width() < 759) {
+          $('#navLinks').hide();
+      } else {
+          $('#navLinks').show();
+      }
+  });
+})
+
 startPage();
 
 
@@ -35,6 +52,8 @@ function showAbout() {
   $('.aboutLink').addClass('navLinkOpen');
   $('.portfolioLink').removeClass('navLinkOpen');
 }
+
+
 
 function toggleMenu() {
   let menu = document.getElementById("navLinks");
