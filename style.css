@@ -422,6 +422,10 @@ footer a:hover {
     font-size: 26px;
   }
 
+  body {
+    padding-bottom: 55px;
+  }
+
   footer {
     text-align: left;
     padding: 15px;
