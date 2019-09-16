@@ -6,7 +6,7 @@
 body {
   color:#404040;
   margin: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   min-height: 100%;
   position: relative;
 }
@@ -420,10 +420,6 @@ footer a:hover {
 
   .project a:hover {
     font-size: 26px;
-  }
-
-  body {
-    padding-bottom: 55px;
   }
 
   footer {
