@@ -3,35 +3,42 @@
 function startPage() {
   $('#portfolio').hide();
   $('#aboutText2').hide();
+  $('#hello').hide();
+  $('#hello').fadeIn(2000);
   $('.name').hide();
-  $('.name').fadeIn(2000);
+  $('.name').fadeIn(6000);
   $('#portfolioButton').click(function() {
       showPortfolio();
     })
+  $('#aboutButton').click(function() {
+    showAbout();
+  })
 
   $('.portfolioLink').on('click', function() {
-    console.log("portfolio nav")
     showPortfolio();
   })
 
   $('.aboutLink').on('click', function() {
-    console.log("about nav");
     showAbout();
   })
 
-  $('.icon').on('click', function() {
+  $('#hamburger').on('click', function() {
+    $(this).toggleClass('checked');
     toggleMenu();
   })
 }
 
 $(function () {
   $(window).on("resize", function () {
+    const nav = document.getElementById("main-menu");
       if ($(window).width() < 760) {
           $('#navLinks').hide();
           $('#navBarBrand').show();
+          $('#hamburger').removeClass('checked');
       } else {
           $('#navLinks').show();
           $('#navBarBrand').show();
+          nav.style.backgroundColor = "#dfd7d7ef";
       }
   });
 })
@@ -44,7 +51,6 @@ function showPortfolio() {
   $('html, body').animate({ scrollTop: $("#portfolio").offset().top - (90)}, 1000);
   $('.portfolioLink').addClass('navLinkOpen');
   $('.aboutLink').removeClass('navLinkOpen');
-  $('#portfolioButton').hide();
 } 
 
 function showAbout() {
@@ -55,18 +61,20 @@ function showAbout() {
   $('.portfolioLink').removeClass('navLinkOpen');
 }
 
-
-
 function toggleMenu() {
-  let menu = document.getElementById("navLinks");
-  let brand = document.getElementById("navBarBrand");
+  const menu = document.getElementById("navLinks");
+  const brand = document.getElementById("navBarBrand");
+  const nav = document.getElementById("main-menu");
+
   if (menu.style.display === "flex") {
     menu.style.display = "none";
-    brand.style.display= "flex";
+    brand.style.display = "flex";
+    nav.style.backgroundColor = "#dfd7d7ef";
 
   } else {
     menu.style.display = "flex";
     brand.style.display= "none";
+    nav.style.backgroundColor = "#2D82B3";
   }
 }
 

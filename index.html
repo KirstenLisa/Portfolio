@@ -13,75 +13,161 @@
 </head>
   <body>
     <nav id="main-menu" class="main-menu">
-      <div class="navBarBrand" id="navBarBrand">Kirsten Kustusch</div>
-      <ul id="navLinks" class="links">
-        <li class="aboutLink"><a href="#aboutMe">About</a></li>
-        <li class="portfolioLink"><a href="#portfolio"> Portfolio</a></li>
-        <li class="github"><a target="_blank" href="https://github.com/KirstenLisa/" >Github</a></li>
-        <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/kirstenkustusch/">LinkedIn</a></li>
-      </ul>
-      <a href="javascript:void(0);" class="icon">
-        <i class="fa fa-bars"></i>
-      </a> 
+      <div class="navBarBrand" id="navBarBrand">
+        <div id="navBarBrand1">Kirsten Kustusch</div>
+        <div id="navBarBrand2">Web Developer</div>
+      </div>
+          <ul id="navLinks" class="links">
+              <li class="aboutLink"><a href="#aboutMe">About</a></li>
+              <li class="portfolioLink"><a href="#portfolio"> Portfolio</a></li>
+              <li class="github"><a target="_blank" href="https://github.com/KirstenLisa/" >Github</a></li>
+              <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/kirstenkustusch/">LinkedIn</a></li>
+            </ul>
+            <div id="menu-toggle">
+                <div id="hamburger">
+                    <a href="javascript:void(0);" class="icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a> 
+                </div>
+            </div>     
     </nav>
+    
     <header class="header">
-      <h1>Hi, my name is <span class="name">Kirsten</span></h1>
+      <h1><span id="hello">Hello, </span><span class="name">I<span id="apostroph">'</span>m Kirsten</span></h1>
     </header>
     <main>
+        
+      <section class="buttonSection">
+          <section id="mainImage">
+              <img id="profilePic" src="Images/main-image.jpg" alt="main-image">
+            </section>
+          <button type="button" class="Button" id="aboutButton">
+              About
+            </button>
+          <button type="button" class="Button" id="portfolioButton">
+            Portfolio
+          </button>
+          <a target="_blank" href="mailto:kirsten.kustusch@gmail.com">
+          <button type="button" class="Button" id="contactButton">
+              Contact
+          </button>
+          </a>
+      </section>
 
       <section class="aboutMe" id="aboutMe">
         <h2 id="aboutHeadline">About Me</h2>
-        <div id="aboutText">I am on my way to become a <span>Web Developer</span>. For the first ten years of my professional life I worked as a TV-journalist and video editor. What I love about coding ist the same that I love about TV-journalism: communicating with people by visualizing ideas and stories. I want to know how things work, their background story and love to learn about new technologies, different perspectives, other solutions.</div>
-        <div id="aboutText2">No matter if under time pressure or on weekends or at night, I am always a reliable, motivated team player not losing her good mood.No matter if under time pressure or on weekends or at night, I am always a reliable, motivated team player not losing her good mood. As a passionate long-distance runner, I know that sometimes in life you simply have to grit your teeth.</div>
-        <button type="button" class="Button" id="portfolioButton">Portfolio</button>
+        <div id="aboutText">I am a mission-driven <span class="text-color">Frontend Web Developer</span> specialized in JavaScript, React, Node.js/Express.js, and PostgreSQL. My path has taken me from Germany to Israel and from TV journalism to software development. What I love about coding is the same that I love about TV journalism: there is always something new to discover.</div>
+        <div id="aboutText2">I enjoy creating user friendly, state-of-the-art websites and applications. My experience in a fast-paced working environment helps me work well under time pressure without neither losing my good mood nor the oversight of the time schedule. As a passionate long-distance runner, I know that sometimes in life you simply have to grit your teeth.</div>
       </section>
 
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
         <div id="projectDiv">
+            <div class="project" id="project4">
+                <h3 class="projectTitle">My Classroom</h3>
+                <div class="project-container">
+                <div class="project-part1">
+                  <img class="projectImage" src="Images/homework_desktop_teacher.png" alt="Classroom APP">
+                  <ul class="techList" style="list-style: none;">
+                     <li id="React"><img class="logo" src="Images/ReactJS.png" alt="React Logo"></li>
+                     <li id="Node"><img class="logo" src="Images/node-logo.jpg" alt="Node Logo"></li>
+                     <li id="Express"><img class="logo" src="Images/express-logo.png" alt="Express Logo"></li>
+                     <li id="PostgreSQL"><img class="logo" src="Images/postgresql-logo.png" alt="PostgreSQL Logo"></li>
+                     <li id="HTML5"><img class="logo" src="Images/HTML5_Logo.png" alt="HTML5 Logo"></li>
+                     <li id="CSS"><img class="logo" src="Images/cssLogo.png" alt="CSSlogo"></li>
+                   </ul>
+                </div>
+              <div class="project-part2">
+                <p class="projectDes">'My Classroom' helps teachers, parents and students to organize everyday school life.</p>
+                <a class="codeLink" id="repoClient" href="https://github.com/KirstenLisa/classroom" target="_blank">Repo Client</a>
+                <a class="codeLink" id="repoAPI" href="https://github.com/KirstenLisa/classroom-api" target="_blank">Repo API</a>
+                <a class="pageLink" id="zeitLink" href="https://kirstens-classroom-app.now.sh/" target="_blank">Live Page</a>
+              </div>
+              </div>
+            </div>
             <div class="project" id="project3">
-                <img class="projectImage" src="Images/UVAppPic.png" alt="UV APP">
                 <h3 class="projectTitle">Beach or Basement?</h3>
+                <div class="project-container">
+              <div class="project-part1">
+                <img class="projectImage" src="Images/UVAppPic.png" alt="UV APP">
                  <ul class="techList" style="list-style: none;">
                   <li id="HTML5"><img class="logo" src="Images/HTML5_Logo.png" alt="HTML5 Logo"></li>
                   <li id="CSS"><img class="logo" src="Images/cssLogo.png" alt="CSSlogo"></li>
-                  <li id="jQuery"><img class="logo" src="Images/JQueryLogo.jpg" alt="jQuery Logo"></li>
+                  <li id="jQuery"><img class="logo" src="Images/jquery.png" alt="jQuery Logo"></li>
                 </ul>
+              </div>
+              <div class="project-part2">
                 <p class="projectDes">Find out how long you should stay in the sun. The UV Index App tells you when you should avoid sun exposure and provides you with alternative times for outdoor activities as well as with an hourly UV index forecast.</p>
                 <a class="codeLink" id="repoDH" href="https://github.com/KirstenLisa/UV-Index-App" target="_blank">Repo</a>
-                <a class="pageLink" id="pageDH" href="https://kirstenlisa.github.io/UV-Index-App/" target="_blank">Live</a>
+                <a class="pageLink" id="pageDH" href="https://kirstenlisa.github.io/UV-Index-App/" target="_blank">Live Page</a>
               </div>
+            </div>
           <div class="project" id="project1">
-            <img class="projectImage" src="Images/DieHard.png" alt="Die Hard Quiz">
             <h3 class="projectTitle">Die Hard Quiz</h3>
+            <div class="project-container">
+            <div class="project-part1">
+            <img class="projectImage" src="Images/diehard_startpage.png" alt="Die Hard Quiz">
              <ul class="techList" style="list-style: none;">
               <li id="HTML5"><img class="logo" src="Images/HTML5_Logo.png" alt="HTML5 Logo"></li>
               <li id="CSS"><img class="logo" src="Images/cssLogo.png" alt="CSSlogo"></li>
-              <li id="jQuery"><img class="logo" src="Images/JQueryLogo.jpg" alt="jQuery Logo"></li>
+              <li id="jQuery"><img class="logo" src="Images/jquery.png" alt="jQuery Logo"></li>
             </ul>
+          </div>
+          <div class="project-part2">
             <p class="projectDes">Find out how hard you really are and how many facts you know about the Die Hard movies. 
             Have you been brave enough to watch all five?</p>
             <a class="codeLink" id="repoDH" href="https://github.com/KirstenLisa/Die-Hard-Quiz" target="_blank">Repo</a>
-            <a class="pageLink" id="pageDH" href="https://kirstenlisa.github.io/Die-Hard-Quiz/" target="_blank">Live</a>
+            <a class="pageLink" id="pageDH" href="https://kirstenlisa.github.io/Die-Hard-Quiz/" target="_blank">Live Page</a>
           </div>
+        </div>
+      </div>
           <div class="project" id="project2">
-            <img class="projectImage" src="Images/WhoSuicide.png" alt="WHO Suicide Graph">
             <h3 class="projectTitle">WHO Suicide Analysis</h3>
+            <div class="project-container">
+            <div class="project-part1">
+            <img class="projectImage" src="Images/WhoSuicide.png" alt="WHO Suicide Graph">
+          
                  <ul class="techList" style="list-style: none;">
               <li id="NumPy"><img class="logo" src="Images/NumPyLogo.png" alt="NumPy Logo"></li>
               <li id="Python"><img class="logo" src="Images/pythonLogo.png" alt="Python Logo"></li>
               <li id="Matplotlib"><img class="logo" src="Images/matplotlibLogo.png" alt="Matplotlib Logo"></li>
             </ul>
+          </div>
+          <div class="project-part2">
             <p class="projectDes">Analysis of suicide numbers covering 1985-2016, by country, year, age groups and sex, exploring long-time trends and differences between countries.
             </p>
             <a class="codeLink" id="repoSuicide" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis" target="_blank">Repo</a>
-            <a class="pageLink" id="pageSuicide" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis/blob/master/Suicide%20Project.ipynb" target="_blank">Live</a>
+            <a class="pageLink" id="pageSuicide" href="https://github.com/KirstenLisa/WHO-Suicide-Analysis/blob/master/Suicide%20Project.ipynb" target="_blank">Live Page</a>
           </div>
         </div>
+      </div>
+      </div>
       </section>
        
     </main>
-    <footer><a id="footerLink" href="mailto:kirsten.kustusch@gmail.com">Email Me</a></footer>
+    <footer>
+      <ul id="#footer-ul">
+        <li id="contact-email">
+          <img id="email-icon" src="Images/email-icon.png">
+          <div id="email">
+            <a target="_blank" href="mailto:kirsten.kustusch@gmail.com">kirsten.kustusch@gmail.com</a>
+          </div>
+        </li>
+        <li id="contact-links">
+            <a target="_blank" href="https://github.com/KirstenLisa/">
+              <img class="contact-icon" src="Images/github-logo.png">
+            </a>
+          </li>
+        <li id="contact-links">
+            <a target="_blank" href="https://www.linkedin.com/in/kirstenkustusch/">
+              <img class="contact-icon" src="Images/linked-bw.png">
+            </a>
+   
+        </li>
+      </ul>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
