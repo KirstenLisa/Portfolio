@@ -9,9 +9,16 @@ function startPage() {
   $('.name').fadeIn(6000);
   $('#portfolioButton').click(function() {
       showPortfolio();
+      $(this).toggleClass('clicked');
+
     })
   $('#aboutButton').click(function() {
     showAbout();
+    $(this).toggleClass('clicked');
+  })
+
+  $('#contactButton').click(function() {
+    $(this).toggleClass('clicked');
   })
 
   $('.portfolioLink').on('click', function() {
@@ -77,5 +84,6 @@ function toggleMenu() {
     nav.style.backgroundColor = "#2D82B3";
   }
 }
+
 
 
