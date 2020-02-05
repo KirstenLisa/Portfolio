@@ -7,13 +7,15 @@ html {
   max-width: 100%;
   }
 
+
 body {
-  color:#404040;
+  /* color:#404040; */
+  color: white;
   margin: 0px;
   padding-bottom: 80px;
-  min-height: 100%;
   position: relative;
-  background-color:  #dfd7d7ef;
+  background-color:  #2D82B3;
+  width: 100%;
 }
 
 a {
@@ -28,13 +30,13 @@ nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  background-color: #2D82B3;
   align-items: center;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   color: #353434;
-  background-color: #dfd7d7ef;
   padding: 30px 30px 0px 20px;
 }
 
@@ -44,7 +46,8 @@ nav {
   padding-left: 10px;
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
-  color: #353434; 
+  /* color: #353434; */
+  color: white;
 }
 
 #navBarBrand1 {
@@ -53,7 +56,7 @@ nav {
 
 #navBarBrand2 {
   font-size: 20px;
-  font-family: 'Quattrocento', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .icon {
@@ -68,7 +71,9 @@ nav {
 #hamburger { 
   display: block;
   padding: 10px;
-  background: #2D82B3; width: 60px; height: 60px; 
+  background: white; 
+  width: 60px; 
+  height: 60px; 
   position: relative; 
   margin-left: auto; margin-right: auto;
   border-radius: 8px; 
@@ -79,7 +84,7 @@ nav {
   position: absolute; 
   left:8px;
   height: 4px; width: 45px; 
-  background: #fff; border-radius: 2px;
+  background: #2D82B3; border-radius: 2px;
   display: block; 
   transition: 0.5s; 
   transform-origin: center; 
@@ -110,13 +115,13 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    background-color: #2D82B3;
+    background-color: white;
     margin: 0px;
     padding: 0px;
 }
 
 #navLinks a {
-  color: white;
+  color: #2D82B3;
   font-family: Karla,sans-serif;
   font-weight: bold;
   padding: 4px 14px;
@@ -133,7 +138,7 @@ nav {
 }
 
 a:-webkit-any-link {
-  color: white;
+  color: #2D82B3;
   text-decoration: none;
 }
 
@@ -150,7 +155,6 @@ a:-webkit-any-link {
 }
 
 .linkedin {
-  background-color: #2D82B3;
   text-decoration: none;
   padding: 5px;
   border-radius: 2px;
@@ -162,7 +166,7 @@ a:-webkit-any-link {
 
 .linkedin a:hover {
   color: #404040 !important;
-  background-color: #2D82B3;
+  background-color: rgb(45, 130, 179);
 }
 
 
@@ -181,10 +185,11 @@ header {
 }
 
 h1 {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Oswald', sans-serif;
   margin: 70px 20px 0px 20px;
   padding: 40px 10px 0px 10px;
-  color: #353434;
+  /* color: #353434; */
+  color: white;
 }
 
 #apostroph {
@@ -192,7 +197,10 @@ h1 {
 }
 
 .text-color {
-  color: #FF2733;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 #hello {
@@ -207,7 +215,7 @@ h1 {
 }
 
 main {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #mainImage {
@@ -220,10 +228,12 @@ main {
   justify-content: space-between;
   margin-right: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 #aboutButton {
   background-color: #FF2733;
+  border: 1px solid #FF2733;
   font-size: 20px;
   color: white;
   height: 95px;
@@ -236,9 +246,10 @@ main {
 }
 
 #portfolioButton {
-  background-color: #2D82B3;
+  background-color: white;
+  border: 1px solid white;
   font-size: 20px;
-  color: white; 
+  color:  #2D82B3;
   border-radius: 15%;
   height: 95px;
   width: 95px;
@@ -249,6 +260,7 @@ main {
 
 #contactButton {
   background-color: #CCC833;
+  border: 1px solid #CCC833;
   font-size: 20px;
   color: white;
   border-radius: 15%;
@@ -274,8 +286,8 @@ main {
 }
 
 #portfolioButton:hover {
-  background-color: rgba(45, 130, 179, 0.705);
-  color: white;
+  background-color: rgb(233, 227, 227);
+  color: rgba(45, 130, 179, 0.705);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -293,8 +305,8 @@ main {
 }
 
 #portfolioButton:active {
-  background-color: rgba(45, 130, 179, 0.705);
-  color: white;
+  background-color: rgb(233, 227, 227);
+  color: rgba(45, 130, 179, 0.705);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -312,7 +324,7 @@ main {
 
 .aboutMe {
   min-height: 200px;
-  padding: 15px;
+  padding: 15px 30px 30px 30px;
   margin-bottom: 25px;
 }
 
@@ -320,10 +332,14 @@ h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px; 
   line-height: 48px;
+  color: #2D82B3;
+}
+
+#aboutText {
+  border-radius: 5px;
 }
 
 #aboutText, #aboutText2 {
-  margin: 20px 15px 20px 15px;
   font-family: 'Quattrocento', serif;
   font-size: 20px;
   line-height: 30px;
@@ -333,15 +349,26 @@ h2 {
   font-weight: bold;
 }
 
+.aboutMe.expanded {
+  background-color: white;
+  color: black;
+}
+
+
+.aboutMe.expanded span {
+  color: #FF2733;
+  text-transform: lowercase;
+}
+
 #portfolioButton:hover {
-  color:white;
-  background-color: #2D82B3;
+  background-color: rgb(233, 227, 227);
+  color: rgba(45, 130, 179, 0.705);
 }
 
 #portfolio {
-  padding-left: 15px;
-  margin-bottom: 20px;
-  overflow: scroll;
+  color: black;
+  background-color: white;
+  padding: 15px 30px 30px 30px;
 }
 
 #projectDiv {
@@ -366,6 +393,7 @@ h2 {
   line-height: 24px;
   position: relative;
   left: -15px;
+  color: #2D82B3;
 }
 
 .logo {
@@ -431,7 +459,7 @@ h2 {
 footer {
   display: flex;
   position: absolute;
-  background-color: #FF2733;
+  background-color: transparent;
   color: white;
   left: 0;
   bottom: 0;
@@ -489,7 +517,7 @@ footer > ul {
 }
 
 footer a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -537,14 +565,14 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #dfd7d7ef;
+    background-color: #2D82B3;
     order: 3;
     margin-left: 10px;
     padding: 0px;
   }
 
   #navLinks a {
-    color:  #353434; 
+    color:  white; 
     padding: 0px;
     margin: 5px;
     font-size: 20px;
@@ -555,14 +583,14 @@ footer a:hover {
   }
 
   .linkedin {
-    background-color: #dfd7d7ef;
+    background-color: #FF2733;
   }
 
   #hamburger {
     display: none;
   }
 
-  header, main {
+  header {
     margin-left: 60px;
     margin-right: 30px;
     margin-top: 180px;
@@ -570,7 +598,7 @@ footer a:hover {
   }
 
   main {
-    margin-top: 0px;
+    margin-top: 180px;
   }
   
   h1 {
@@ -600,6 +628,10 @@ footer a:hover {
   .buttonSection {
     align-items: flex-end;
     justify-content: left;
+    margin-bottom: 40px;
+    box-shadow: none;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .Button {
@@ -628,7 +660,8 @@ footer a:hover {
   .aboutMe {
     margin-top: 30px;
     margin-bottom: -20px;
-    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   h2 {
@@ -649,6 +682,8 @@ footer a:hover {
   #portfolio {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   #projectDiv {
@@ -717,6 +752,10 @@ footer a:hover {
     font-size: 26px;
   }
 
+  footer {
+    background-color: #FF2733;
+  }
+
   footer > ul {
     display: flex;
     flex-direction: row;
@@ -746,7 +785,7 @@ body {
   padding-bottom: 220px;
 }
 
-  header, main {
+  header {
     margin-left: 40px;
     margin-right: 30px;
   }
@@ -779,13 +818,17 @@ body {
   .aboutMe {
     margin-bottom: -50px;
     margin-top: 0px;
-    padding: 15px 15px 0px 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    
   }
 
   #aboutText {
     margin-top: 60px;
     margin-bottom: 35px;
   }
+
+
 
   #aboutHeadline {
     margin-top: 50px;
@@ -795,6 +838,8 @@ body {
   #portfolio {
     margin-top: 140px;
     padding-top: 45px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   h2 {

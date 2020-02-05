@@ -15,6 +15,8 @@ function startPage() {
   $('#aboutButton').click(function() {
     showAbout();
     $(this).toggleClass('clicked');
+   
+
   })
 
   $('#contactButton').click(function() {
@@ -45,7 +47,7 @@ $(function () {
       } else {
           $('#navLinks').show();
           $('#navBarBrand').show();
-          nav.style.backgroundColor = "#dfd7d7ef";
+          nav.style.backgroundColor = "#2D82B3";
       }
   });
 })
@@ -66,6 +68,7 @@ function showAbout() {
   $('html, body').animate({ scrollTop: $("#aboutMe").offset().top - (80)  }, 500);
   $('.aboutLink').addClass('navLinkOpen');
   $('.portfolioLink').removeClass('navLinkOpen');
+  $('.aboutMe').addClass('expanded');
 }
 
 function toggleMenu() {
@@ -76,12 +79,12 @@ function toggleMenu() {
   if (menu.style.display === "flex") {
     menu.style.display = "none";
     brand.style.display = "flex";
-    nav.style.backgroundColor = "#dfd7d7ef";
+    nav.style.backgroundColor = "#2D82B3";
 
   } else {
     menu.style.display = "flex";
     brand.style.display= "none";
-    nav.style.backgroundColor = "#2D82B3";
+    nav.style.backgroundColor = "white";
   }
 }
 
