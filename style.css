@@ -71,7 +71,7 @@ nav {
 #hamburger { 
   display: block;
   padding: 10px;
-  background: white; 
+  background: #FF2733; 
   width: 60px; 
   height: 60px; 
   position: relative; 
@@ -84,7 +84,7 @@ nav {
   position: absolute; 
   left:8px;
   height: 4px; width: 45px; 
-  background: #2D82B3; border-radius: 2px;
+  background: white; border-radius: 2px;
   display: block; 
   transition: 0.5s; 
   transform-origin: center; 
@@ -107,6 +107,11 @@ nav {
 #hamburger.checked .line:nth-child(3){
    transform: translateY(-12px) rotate(45deg);
    background: #FF2733;
+}
+
+#hamburger.checked {
+  background: white;
+  border: 1px solid white;
 }
 
 
@@ -166,7 +171,7 @@ a:-webkit-any-link {
 
 .linkedin a:hover {
   color: #404040 !important;
-  background-color: rgb(45, 130, 179);
+  background-color: #FF2733 !important;
 }
 
 
@@ -186,8 +191,9 @@ header {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  margin: 70px 20px 0px 20px;
+  margin: 70px 20px 30px 20px;
   padding: 40px 10px 0px 10px;
+  letter-spacing: 3px;
   /* color: #353434; */
   color: white;
 }
@@ -197,20 +203,20 @@ h1 {
 }
 
 .text-color {
-  color: white;
   font-weight: bold;
   font-size: 22px;
-  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  color: #FF2733;
 }
 
 #hello {
   font-weight: bold;
-  font-size: 45px;
+  font-size: 60px;
 }
 
 .name {
   display: block;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 58px;
 }
 
@@ -357,7 +363,6 @@ h2 {
 
 .aboutMe.expanded span {
   color: #FF2733;
-  text-transform: lowercase;
 }
 
 #portfolioButton:hover {
@@ -607,6 +612,7 @@ footer a:hover {
     margin-bottom: -55px;
     margin-left: 264px;
     margin-top: 100px;
+    padding-left: 20px;
   }
 
   .name {
