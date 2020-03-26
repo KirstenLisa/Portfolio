@@ -14,7 +14,8 @@ body {
   margin: 0px;
   padding-bottom: 80px;
   position: relative;
-  background-color:  #2D82B3;
+  /* background-color:  #2D82B3; */
+  background-color: #00334e;
   width: 100%;
 }
 
@@ -30,7 +31,7 @@ nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: #2D82B3;
+  background-color: #00334e;
   align-items: center;
   top: 0;
   left: 0;
@@ -64,7 +65,7 @@ nav {
 }
 
 #menu-toggle {
-  background-color: #2D82B3;
+  background-color: #00334e;
   border-radius: 15px;
 }
 
@@ -126,7 +127,7 @@ nav {
 }
 
 #navLinks a {
-  color: #2D82B3;
+  color: #00334e;
   font-family: Karla,sans-serif;
   font-weight: bold;
   padding: 4px 14px;
@@ -143,7 +144,7 @@ nav {
 }
 
 a:-webkit-any-link {
-  color: #2D82B3;
+  color: #00334e;
   text-decoration: none;
 }
 
@@ -184,13 +185,17 @@ a:-webkit-any-link {
   font-size: 20px;
   color: #FF2733;
 }
+
+#profilePicBig {
+  display: none;
+}
  
 header {
   margin-top: 124px;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family:'Oswald', sans-serif;
   margin: 70px 20px 30px 20px;
   padding: 40px 10px 0px 10px;
   letter-spacing: 3px;
@@ -205,7 +210,7 @@ h1 {
 .text-color {
   font-weight: bold;
   font-size: 22px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #FF2733;
 }
 
@@ -240,7 +245,8 @@ main {
 #aboutButton {
   background-color: #FF2733;
   border: 1px solid #FF2733;
-  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
   color: white;
   height: 95px;
   width: 95px;
@@ -254,8 +260,9 @@ main {
 #portfolioButton {
   background-color: white;
   border: 1px solid white;
-  font-size: 20px;
-  color:  #2D82B3;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  color: #00334e;
   border-radius: 15%;
   height: 95px;
   width: 95px;
@@ -267,7 +274,8 @@ main {
 #contactButton {
   background-color: #CCC833;
   border: 1px solid #CCC833;
-  font-size: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
   color: white;
   border-radius: 15%;
   height: 95px;
@@ -338,7 +346,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 32px; 
   line-height: 48px;
-  color: #2D82B3;
+  color: #00334e;
 }
 
 #aboutText {
@@ -346,7 +354,7 @@ h2 {
 }
 
 #aboutText, #aboutText2 {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
   line-height: 30px;
 }
@@ -357,7 +365,7 @@ h2 {
 
 .aboutMe.expanded {
   background-color: white;
-  color: black;
+  color: #00334e;
 }
 
 
@@ -371,7 +379,7 @@ h2 {
 }
 
 #portfolio {
-  color: black;
+  color: #00334e;
   background-color: white;
   padding: 15px 30px 30px 30px;
 }
@@ -398,7 +406,7 @@ h2 {
   line-height: 24px;
   position: relative;
   left: -15px;
-  color: #2D82B3;
+  color: #00334e;
 }
 
 .logo {
@@ -406,7 +414,7 @@ h2 {
 }
 
 .projectDes {
-  font-family: 'Quattrocento', serif; 
+  font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
   line-height: 30px;
 
@@ -415,11 +423,11 @@ h2 {
 #repoSuicide, #repoDH, #pageDH, #pageSuicide, #repoClient, #repoAPI, #zeitLink {
   font-family: Karla,sans-serif; 
   font-size: 20px;
-  color: #2D82B3;
+  color: #00334e;
 }
 
 #repoSuicide a:visited {
-  color: #2D82B3;
+  color: #00334e;
 }
 
 #repoSuicide a:hover {
@@ -429,7 +437,7 @@ h2 {
 
 
 .codeLink a:visited {
-  color: #2D82B3 !important; 
+  color: #00334e !important; 
 }
 
 .codeLink:hover {
@@ -570,7 +578,7 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #2D82B3;
+    background-color: #00334e;
     order: 3;
     margin-left: 10px;
     padding: 0px;
@@ -596,21 +604,44 @@ footer a:hover {
   }
 
   header {
-    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
     margin-right: 30px;
     margin-top: 180px;
     margin-bottom: 0px;
   }
 
+  #image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 64px;
+  }
+  
+  #profilePicBig {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+
+  #profilePicBig {
+    display: inline-flex;
+    border-radius: 50%;
+  }
+
   main {
-    margin-top: 180px;
+    margin-top: 80px;
   }
   
   h1 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: -55px;
-    margin-left: 264px;
+    margin-left: 20px;
     margin-top: 100px;
     padding-left: 20px;
   }
@@ -625,42 +656,40 @@ footer a:hover {
   }
 
   #profilePic {
-    height: 210px;
-    width: 210px;
-    margin-right: 30px;
-    border-radius: 50%;
+    display: none;
   }
 
   .buttonSection {
-    align-items: flex-end;
-    justify-content: left;
+    justify-content: flex-start;
     margin-bottom: 40px;
     box-shadow: none;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .Button {
     margin: 5px;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   #aboutButton {
     margin-left: 0px;
     font-size: 24px;
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
+    margin: 20px;
   }
 
   #portfolioButton {
     font-size: 24px;
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
+    margin: 20px;
   }
 
   #contactButton {
     font-size: 24px;
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
+    margin: 20px;
   }
 
   .aboutMe {
@@ -678,11 +707,13 @@ footer a:hover {
   #aboutText {
     font-size: 20px;
     line-height: 40px;
+    padding-bottom: 50px;
   }
 
   #aboutText2 {
     font-size: 20px;
     line-height: 40px;
+    padding-bottom: 83px;
   }
 
   #portfolio {
@@ -792,25 +823,49 @@ body {
 }
 
   header {
-    margin-left: 40px;
+    margin-left: 90px;
     margin-right: 30px;
   }
 
+  #image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  #profilePicBig {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
+
   #hello {
-    font-size: 64px;
+    font-size: 90px;
   }
 
   .name {
-    font-size: 38px;
+    font-size: 64px;
   }
 
   main {
-    margin-top: -40px;
+    margin-top: 40px;
+  }
+
+  .buttonSection {
+    margin-left: 90px;
+  }
+
+  #aboutButton {
+    margin-left: 0px;
   }
 
   #navLinks {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-left: 40px;
   }
 
   .navBarBrand {
@@ -818,7 +873,8 @@ body {
   }
   
   h1 {
-    margin-bottom: 0px;
+    margin-bottom: 130px;
+    margin-left: 50px;
   }
 
   .aboutMe {

@@ -47,7 +47,7 @@ $(function () {
       } else {
           $('#navLinks').show();
           $('#navBarBrand').show();
-          nav.style.backgroundColor = "#2D82B3";
+          nav.style.backgroundColor = "#00334e";
       }
   });
 })
@@ -65,7 +65,7 @@ function showPortfolio() {
 function showAbout() {
   $('#aboutText2').fadeIn();
   $('#aboutHeadline').fadeIn();
-  $('html, body').animate({ scrollTop: $("#aboutMe").offset().top - (80)  }, 500);
+  $('html, body').animate({ scrollTop: $("#aboutMe").offset().top - (180)  }, 500);
   $('.aboutLink').addClass('navLinkOpen');
   $('.portfolioLink').removeClass('navLinkOpen');
   $('.aboutMe').addClass('expanded');
@@ -79,7 +79,7 @@ function toggleMenu() {
   if (menu.style.display === "flex") {
     menu.style.display = "none";
     brand.style.display = "flex";
-    nav.style.backgroundColor = "#2D82B3";
+    nav.style.backgroundColor = "#00334e";
 
   } else {
     menu.style.display = "flex";
