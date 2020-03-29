@@ -420,7 +420,7 @@ h2 {
 
 }
 
-#repoSuicide, #repoDH, #pageDH, #pageSuicide, #repoClient, #repoAPI, #zeitLink {
+#repoSuicide, #repoDH, #pageDH, #repoUV, #pageUV, #pageSuicide, .repoClient, .repoAPI, .zeitLink {
   font-family: Karla,sans-serif; 
   font-size: 20px;
   color: #00334e;
@@ -431,7 +431,7 @@ h2 {
 }
 
 #repoSuicide a:hover {
-  color:#404040;
+  color:#291414;
   font-size: 20px;
 }
 
@@ -441,12 +441,35 @@ h2 {
 }
 
 .codeLink:hover {
-  color:#404040 !important;
+  color:#FF2733 !important;
+  font-size: 20px;
+}
+
+.repoClient a:visited {
+  color: #00334e !important; 
+}
+
+.repoClient:hover {
+  color:#FF2733 !important;
+  font-size: 20px;
+}
+
+.repoAPI a:visited {
+  color: #00334e !important; 
+}
+
+.repoAPI:hover {
+  color:#FF2733 !important;
   font-size: 20px;
 }
 
 .pageLink:hover {
-  color:#404040 !important;
+  color:#FF2733 !important;
+  font-size: 20px;
+}
+
+.zeitLink:hover {
+  color:#FF2733 !important;
   font-size: 20px;
 }
 
@@ -454,7 +477,11 @@ h2 {
   content: "| ";
 }
 
-#repoClient:after {
+.zeitLink:before {
+  content: "| ";
+}
+
+.repoClient:after {
     content: " | ";
 }
 
@@ -494,7 +521,7 @@ footer > ul {
  
 }
 
-#contact-email, #contact-links {
+#contact-email, #contact-link1, #contact-link2 {
   list-style: none;
 }
 
@@ -781,11 +808,23 @@ footer a:hover {
     width: 38px;
 }
 
-  #repoLink, #pageLink {
+  .repoLink, .pageLink, .zeitLink, .codeLink {
     font-size: 22px;
   }
 
   .project a:hover {
+    font-size: 26px;
+  }
+
+  #project1 a:hover {
+    font-size: 26px;
+  }
+
+  #project2 a:hover {
+    font-size: 26px;
+  }
+
+  #project3 a:hover {
     font-size: 26px;
   }
 
