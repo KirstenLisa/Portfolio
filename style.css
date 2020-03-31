@@ -138,7 +138,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.aboutLink, .portfolioLink, .github{
+.aboutLink, .portfolioLink, .github, .linkedin{
   margin: 0px 10px 0px 10px;
   padding: 5px;
 }
@@ -407,6 +407,13 @@ h2 {
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
+.projectImage:hover {
+  transform: scaleY(1.01);
+  transform: scaleX(1.01);
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
+  filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.5));
+}
+
 .projectTitle {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
@@ -417,7 +424,7 @@ h2 {
 }
 
 .logo {
-  width: 40px;
+  width: 35px;
 }
 
 .projectDes {
@@ -439,7 +446,6 @@ h2 {
 
 #repoSuicide a:hover {
   color:#291414;
-  font-size: 20px;
 }
 
 
@@ -449,7 +455,6 @@ h2 {
 
 .codeLink:hover {
   color:#FF2733 !important;
-  font-size: 20px;
 }
 
 .repoClient a:visited {
@@ -458,7 +463,6 @@ h2 {
 
 .repoClient:hover {
   color:#FF2733 !important;
-  font-size: 20px;
 }
 
 .repoAPI a:visited {
@@ -467,17 +471,14 @@ h2 {
 
 .repoAPI:hover {
   color:#FF2733 !important;
-  font-size: 20px;
 }
 
 .pageLink:hover {
   color:#FF2733 !important;
-  font-size: 20px;
 }
 
 .zeitLink:hover {
   color:#FF2733 !important;
-  font-size: 20px;
 }
 
 .pageLink:before {
@@ -801,10 +802,6 @@ footer a:hover {
     width: 100%;
   }
 
-  .projectImage:hover {
-    color: grey;
-  }
-
   .projectTitle {
     font-size: 22px;
     left: -17px;
@@ -820,23 +817,7 @@ footer a:hover {
 }
 
   .repoLink, .pageLink, .zeitLink, .codeLink {
-    font-size: 22px;
-  }
-
-  .project a:hover {
-    font-size: 26px;
-  }
-
-  #project1 a:hover {
-    font-size: 26px;
-  }
-
-  #project2 a:hover {
-    font-size: 26px;
-  }
-
-  #project3 a:hover {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   footer {
