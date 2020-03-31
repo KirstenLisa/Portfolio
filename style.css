@@ -274,6 +274,7 @@ main {
 #contactButton {
   background-color: #CCC833;
   border: 1px solid #CCC833;
+  text-align: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
   color: white;
@@ -283,6 +284,12 @@ main {
   transition-property: background, border-radius;
   transition-duration: 0.5s;
   transition-timing-function: linear;
+}
+
+#innerButton {
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: 95px;
 }
 
 #aboutButton.clicked {
@@ -717,6 +724,10 @@ footer a:hover {
     width: 130px;
     height: 130px;
     margin: 20px;
+  }
+
+  #innerButton {
+    line-height: 130px;
   }
 
   .aboutMe {
